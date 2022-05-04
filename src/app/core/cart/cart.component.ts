@@ -16,9 +16,9 @@ export class CartComponent implements OnInit,OnChanges {
   totalPrice:number=0
   isRemoved:boolean=false
   ngOnInit(): void {
-    this.myCart=this.cartService.get()
+    this.myCart=this.cartService.getAllProducts()
     
-    console.log(this.cartService.get());
+    console.log(this.cartService.getAllProducts());
     
   }
 

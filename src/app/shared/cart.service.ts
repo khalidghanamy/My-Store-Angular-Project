@@ -23,7 +23,7 @@ export class CartService {
     this.isAdded=true
   }
 
-  get() {
+  getAllProducts() {
     return this.cartProducts;
   }
 

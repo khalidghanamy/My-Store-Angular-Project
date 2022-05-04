@@ -9,8 +9,8 @@ import { map, catchError } from 'rxjs';
 
 })
 export class HttpService {
-    api= 'https://my-json-server.typicode.com/khalidghanamy/demo/products'
-   // api= 'http://localhost:3000/products'
+   api= 'https://my-json-server.typicode.com/khalidghanamy/demo/products'
+  //  api= 'http://localhost:3000/products'
   httpHeaders= new HttpHeaders().set('content-type','application/json')
   
   constructor(private http: HttpClient) { }
