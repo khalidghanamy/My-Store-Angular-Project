@@ -1,0 +1,10 @@
+.product-card-1{
+
+ transition: all 0.7s ease;
+}
+
+.product-card-1:hover{
+    transform: scale(1.05);
+    
+
+}

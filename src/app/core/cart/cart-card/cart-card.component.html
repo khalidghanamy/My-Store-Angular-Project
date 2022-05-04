@@ -1,0 +1,50 @@
+<div class=" d-flex justify-content-center">
+
+    <div class="  product-card-1  m-0 text-center p-0 mt-5  product-details  ">
+        <div class="row ">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <a routerLink="/product/{{myCartProduct.id}}" style="text-decoration: none;">
+
+                    <img src="{{myCartProduct.url}}" class="card-img myimg m-0 p-0 productDetailsimg ">
+
+                </a>
+            </div>
+
+            <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-6 ">
+                <div class="mt-2 ">
+                    <a routerLink="/" class='btn btn-outline-primary backTohome'> <i
+                            class="fa-solid fa-circle-left"></i>
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to home page</a>
+                </div>
+                <div class="mt-2 ">
+                    <button (click)="removeProduct(myCartProduct)" class='btn btn-outline-danger backTohome'> <i
+                            class="fa-solid fa-circle-left"></i>
+                        Remove <i class="fa fa-trash" aria-hidden="true"></i></button>
+                </div>
+                <div class="card-body bg-dark mt-5 ">
+                    <h5 class="card-title bg-white">{{myCartProduct.name}}</h5>
+
+                    <h5 class="card-footer bg-white">price : {{myCartProduct.price}} $</h5>
+                    <h5 class="card-footer bg-white"> {{myCartProduct.description}}</h5>
+
+                    <div class=" card-footer bg-white text-center">
+                        <h5 class=" bg-white"> Amount </h5>
+
+                        <input type="number" class="card-footer w-50" id="amount" name='amount'
+                            value="{{myCartProduct.amount}}" [(ngModel)]="myCartProduct.amount" />
+                    </div>
+                    <div class="mt-2 ">
+                        <button (click)="changeAmount(myCartProduct)" class='btn btn-outline-success backTohome'> <i
+                                class="fa-solid fa-circle-left"></i>
+                            Change amount </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

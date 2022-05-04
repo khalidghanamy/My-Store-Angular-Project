@@ -1,0 +1,25 @@
+
+
+
+
+.product-details{
+    height: 75vh;
+    width: 100vh;
+}
+
+.backTohome{
+    background-color: rgba(38, 38, 215, 0.413);
+}
+
+.addToCard{
+    background-color: rgba(242, 255, 3, 0.063);
+
+}
+
+.productDetailsimg{
+    border-radius: 20px;
+    transition: all 0.7s ease;
+}
+.productDetailsimg:hover{
+    transform: scale(1.05) rotate(-10deg);
+}

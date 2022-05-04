@@ -1,0 +1,20 @@
+.footer{
+    height:10vh ;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+.contactMe{
+    color: cadetblue;
+    background-color: rgba(48, 48, 148, 0.35);
+    border: 1px black solid;
+    border-radius: 8px;
+    width:fit-content;
+    padding: 2px;
+    /* margin-left: 3px; */
+}
+
+.links{
+    margin-bottom: 3px;
+}
