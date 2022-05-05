@@ -42,7 +42,18 @@
                 <input type="number"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                     maxlength="16" class="form-control" required placeholder="Enter your credit card number"
-                    name="creditCard" id="creditCard" [(ngModel)]="user.creditCardNumber">
+                    name="creditCard" #creditCard="ngModel" id="creditCard" [(ngModel)]="user.creditCardNumber">
+
+                    <div *ngIf="(creditCard.invalid && (creditCard.dirty || creditCard.touched))"
+                    class="alert m-0 p-0">
+                    <p *ngIf="creditCard.errors?.['required']" class="alert alert-danger  text-center m-0  p-0"
+                        role="alert">
+                        Credit card number is required.
+                    </p>
+                    <p *ngIf="creditCard.errors?.['minlength']" class="alert alert-danger  m-0 p-0 " role="alert">
+                        creditCard at least 16 characters .
+                    </p>
+                </div>
             </div>
             <div class=" d-flex justify-content-center">
 
