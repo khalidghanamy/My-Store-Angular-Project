@@ -16,6 +16,7 @@
     ng serve --open
 </h3>
 
+[![Demo Doccou alpha](http://share.gifyoutube.com/KzB6Gb.gif)](https://youtu.be/RYzl8pBIbcg)
 
 
 <video src='https://youtu.be/RYzl8pBIbcg' width=180/>
