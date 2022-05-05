@@ -2,3 +2,8 @@
     
     filter:opacity(60%) brightness(110%);
 }
+
+
+.myListImage{
+    border-radius:50px;border:3px violet solid; height: 70vh;
+}
