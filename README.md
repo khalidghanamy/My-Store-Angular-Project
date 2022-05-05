@@ -3,8 +3,7 @@
 <h1>
     Start Now
 </h1>
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/RYzl8pBIbcg)
-
+<video src='https://youtu.be/RYzl8pBIbcg' width=180/>
 <h3>
     Git clone
 </h3>
