@@ -11,7 +11,7 @@
 
             <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-6 ">
                 <div class="mt-5 ">
-                    <a routerLink="/" class='btn btn-outline-primary backTohome' > <i class="fa-solid fa-circle-left"></i> <<- Back to home page</a>
+                    <a routerLink="/" class='btn btn-outline-primary backTohome' > <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to home page</a>
                 </div>
                 <div class="card-body bg-dark mt-5 ">
                     <h5 class="card-title bg-white">{{myproduct.name}}</h5>
@@ -27,7 +27,7 @@
                     
                 </div>
                 <div class="mt-5 d-flex justify-content-center">
-                <button class=" btn btn-outline-danger col-6 mt-2  addToCard" (click)="addToCart(myproduct)">Add to cart  ->></button><i class="fa-solid fa-thumbs-up"></i></div>
+                <button class=" btn btn-outline-danger col-6 mt-2  addToCard" (click)="addToCart(myproduct)"> Add to cart  <i class="fa fa-arrow-right" aria-hidden="true"></i></button><i class="fa-solid fa-thumbs-up"></i></div>
             </div>
         </div>
 

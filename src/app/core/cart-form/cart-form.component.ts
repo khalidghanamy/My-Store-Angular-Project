@@ -34,11 +34,11 @@ export class CartFormComponent implements OnInit {
   showPurchaseAlert(){
     if(this.userService.getisPurchased()){
       Swal.fire(
-        `${this.user.fullName}
+        `User name : ${this.user.fullName}
         <br/>
-        ${this.user.address}
+        Address : ${this.user.address}
         <br/>
-        ${this.user.totalPaid}
+        Total Price : ${this.user.totalPaid}
         `
       )
     }

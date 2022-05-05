@@ -62,7 +62,7 @@ export class CartService {
   }
 
   emptyCart():void{
-    this.cartProducts=[]
+    this.cartProducts.splice(0, this.cartProducts.length);
   }
 
   getIsAdded(): boolean {
