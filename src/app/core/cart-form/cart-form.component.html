@@ -37,7 +37,7 @@
             </p>
         </div>
             </div>
-            <div class=" m-1">
+            <!-- <div class=" m-1">
                 <label for="creditCard" class=" form-label">Credit card number </label>
                 <input type="number"
                     oninput="javascript: if (this.value.length > this.maxLength )
@@ -48,7 +48,7 @@
 
                         }"
                     maxlength="16" min="16" class="form-control" required placeholder="Enter your credit card number"
-                    name="creditCard" #creditCard="ngModel" id="creditCard" [(ngModel)]="user.creditCardNumber">
+                    name="creditCard" #creditCard="ngModel" id="creditCard" [(ngModel)]="user.creditCardNumber" (ngModelChange)="validateMaxLength()">
 
                     <div *ngIf="(creditCard.invalid && (creditCard.dirty || creditCard.touched))"
                     class="alert m-0 p-0">
@@ -60,10 +60,33 @@
                         creditCard at least 16 characters .
                     </p>
                 </div>
+            </div> -->
+            <div class=" m-1">
+                <label for="creditCard" class=" form-label">Credit card number </label>
+                {{creditNumberMaxLength}}
+                <input type="number"
+                    
+                    maxlength="16" min="16" class="form-control" required placeholder="Enter your credit card number"
+                    name="creditCard" #creditCard="ngModel" id="creditCard" [(ngModel)]="user.creditCardNumber" (ngModelChange)="validateCreditNumber($event)">
+
+                    <div *ngIf="((creditCard.invalid && (creditCard.dirty || creditCard.touched))||creditNumberMaxLength ||creditNumberMinLength)"
+                    class="alert m-0 p-0">
+                    <p *ngIf="creditCard.errors?.['required']" class="alert alert-danger  text-center m-0  p-0"
+                        role="alert">
+                        Credit card number is required.
+                    </p>
+                    <p *ngIf="creditNumberMinLength" class="alert alert-danger  m-0 p-0 " role="alert">
+                        creditCard at least 16 characters .
+                    </p>
+                    <p *ngIf="creditNumberMaxLength " class="alert alert-danger  m-0 p-0 " role="alert">
+                        creditCard must be 16 characters long. 
+                    </p>
+                </div>
             </div>
             <div class=" d-flex justify-content-center">
 
-                <input type="submit" class="btn btn-outline-success text-center mt-2" [disabled]="form.invalid"
+                <input type="submit" class="btn btn-outline-success text-center mt-2" [disabled]="form.invalid || 
+                creditNumberMinLength || creditNumberMaxLength"
                     value="Submit" />
             </div>
 

@@ -10,11 +10,14 @@ import Swal from 'sweetalert2';
   templateUrl: './cart-form.component.html',
   styleUrls: ['./cart-form.component.css']
 })
-export class CartFormComponent implements OnInit {
 
+export class CartFormComponent implements OnInit {
   
-    user:User=new User()
-   isPurchased:boolean=false
+  
+  creditNumberMaxLength:boolean=false
+  creditNumberMinLength:boolean=false
+  user:User=new User()
+  isPurchased:boolean=false
   constructor(private userService:UserService,private cartService:CartService) { }
 
   ngOnInit(): void {
@@ -45,5 +48,11 @@ export class CartFormComponent implements OnInit {
 
   emptyMyCart(){
     this.cartService.emptyCart()
+  }
+
+  validateCreditNumber(arg:number){
+    this.creditNumberMaxLength=arg.toString().length >16
+    this.creditNumberMinLength=arg.toString().length <16
+    
   }
 }
