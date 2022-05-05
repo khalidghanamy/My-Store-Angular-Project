@@ -10,7 +10,7 @@
                 </a>
             </div>
 
-            <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-6 ">
+            <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-6  myProductinfo">
                 <div class="mt-2 ">
                     <a routerLink="/" class='btn btn-outline-primary backTohome'> <i
                             class="fa-solid fa-circle-left"></i>
@@ -21,14 +21,14 @@
                             class="fa-solid fa-circle-left"></i>
                         Remove <i class="fa fa-trash" aria-hidden="true"></i></button>
                 </div>
-                <div class="card-body bg-dark mt-5 ">
-                    <h5 class="card-title bg-white">{{myCartProduct.name}}</h5>
+                <div class="card-body bg-dark mt-5 myProductinfo ">
+                    <h5 class="card-title bg-white myProductinfo">{{myCartProduct.name}}</h5>
 
-                    <h5 class="card-footer bg-white">price : {{myCartProduct.price}} $</h5>
-                    <h5 class="card-footer bg-white"> {{myCartProduct.description}}</h5>
+                    <h5 class="card-footer bg-white  myProductinfo" >price : {{myCartProduct.price}} $</h5>
+                    <h5 class="card-footer bg-white myProductinfo"> {{myCartProduct.description}}</h5>
 
-                    <div class=" card-footer bg-white text-center">
-                        <h5 class=" bg-white"> Amount </h5>
+                    <div class=" card-footer bg-white text-center myProductinfo">
+                        <h5 class=" bg-white myProductinfo myProductinfo"> Amount </h5>
 
                         <input type="number" class="card-footer w-50" id="amount" name='amount'
                             value="{{myCartProduct.amount}}" [(ngModel)]="myCartProduct.amount" />
