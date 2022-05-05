@@ -28,7 +28,6 @@ export class CartCardComponent implements OnInit,OnChanges {
 
   removeProduct(product:Product){
     this.cartService.removeProduct(product)
-    console.log('done');
    this.updateTotalPrice()
    this.showRemovedAlert()
     

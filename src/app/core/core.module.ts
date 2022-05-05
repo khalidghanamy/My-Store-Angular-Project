@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CartComponent } from './cart/cart.component';
 import { CartFormComponent } from './cart-form/cart-form.component';
-import { UserFormComponent } from './user-form/user-form.component';
-import { SuccessComponent } from './success/success.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -22,8 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     
     CartComponent,
     CartFormComponent,
-    UserFormComponent,
-    SuccessComponent,
+    
     
     NavbarComponent,
     ProductComponent,

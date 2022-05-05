@@ -18,7 +18,6 @@ export class CartComponent implements OnInit,OnChanges {
   ngOnInit(): void {
     this.myCart=this.cartService.getAllProducts()
     
-    console.log(this.cartService.getAllProducts());
     
   }
 

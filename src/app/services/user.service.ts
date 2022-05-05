@@ -13,7 +13,6 @@ export class UserService {
   addNewUser(user:User){
     this.users.push(user)
 
-    console.log(this.users);
     this.isPurchased=true
   }
 

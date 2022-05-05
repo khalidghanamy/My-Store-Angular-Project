@@ -24,7 +24,6 @@ export class CartFormComponent implements OnInit {
   user.totalPaid=this.cartService.getTotalPrice()
   user.products=this.cartService.getAllProducts()
   this.userService.addNewUser(user)
-  console.log(user);
   this.isPurchased=true
   this.showPurchaseAlert()
   this.emptyMyCart()
