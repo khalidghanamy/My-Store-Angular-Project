@@ -38,4 +38,10 @@ export class CartComponent implements OnInit,OnChanges {
     }
   }
 
+  changedAmountAlert(changed:boolean){
+    if(changed){
+      Swal.fire('Changed successfully')
+    }
+  }
+
 }

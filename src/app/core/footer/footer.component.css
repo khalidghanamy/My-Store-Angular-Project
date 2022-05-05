@@ -11,10 +11,19 @@
     border: 1px black solid;
     border-radius: 8px;
     width:fit-content;
+    height: fit-content;
     padding: 2px;
     /* margin-left: 3px; */
 }
 
 .links{
     margin-bottom: 3px;
+}
+
+a{
+    color: rgb(249, 220, 59);
+}
+a:hover{
+    transform: scale(1.8);
+    
 }

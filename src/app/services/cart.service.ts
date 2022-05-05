@@ -11,6 +11,7 @@ export class CartService {
   isAdded: boolean = false;
   isPurchased:boolean=false;
   isRemoved:boolean=false;
+  isAmuntChanged:boolean=false
   ngOnInit(): void {}
 
   addToCart(product: Product) {
@@ -46,7 +47,8 @@ export class CartService {
 
     let newproduct = this.getProduct(product);
     newproduct.amount = product.amount;
-    console.log(newproduct);
+
+    this.isAmuntChanged=true
   }
 
   getTotalPrice() {
@@ -73,5 +75,8 @@ export class CartService {
 
   getisRemoved():boolean{
     return this.isRemoved
+  }
+  getIsChanged(){
+    return this.isAmuntChanged
   }
 }

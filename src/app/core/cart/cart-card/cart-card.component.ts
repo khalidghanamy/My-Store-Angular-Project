@@ -13,6 +13,7 @@ export class CartCardComponent implements OnInit,OnChanges {
 
   @Output() emitPrice:EventEmitter<number>=new EventEmitter();
   @Output() showAlertRemoved:EventEmitter<boolean>=new EventEmitter();
+  @Output() showChangedAmountAlert:EventEmitter<boolean>=new EventEmitter();
   constructor(private cartService:CartService ) { }
 
   ngOnInit(): void {
@@ -37,6 +38,7 @@ export class CartCardComponent implements OnInit,OnChanges {
     this.cartService.changeAmount(product)
 
    this.updateTotalPrice()
+   this.showAlertAmountChanged()
 
   }
   
@@ -49,6 +51,11 @@ export class CartCardComponent implements OnInit,OnChanges {
   showRemovedAlert(){
     let isAdded=this.cartService.getIsAdded()
     this.showAlertRemoved.emit(isAdded)
+  }
+
+  showAlertAmountChanged(){
+    let isChanged=this.cartService.getIsChanged()
+    this.showChangedAmountAlert.emit(isChanged)
   }
 
 }
