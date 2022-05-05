@@ -1,0 +1,9 @@
+.myCartCard{
+    border: 2px violet solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.productDetailsimg{
+    border-radius: 40px;
+}
