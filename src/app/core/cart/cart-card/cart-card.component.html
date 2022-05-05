@@ -1,8 +1,8 @@
 <div class=" d-flex justify-content-center myCartCard">
 
-    <div class="  product-card-1  m-0 text-center p-0 mt-5  product-details  ">
-        <div class="row ">
-            <div class="col-lg-6 col-md-8 col-sm-12">
+    <div class="  product-card-1  m-0 text-center p-0 mt-5  product-details d-flex justify-content-center ">
+        <div class="row d-flex justify-content-center p-0">
+            <div class="col-lg-6 col-md-8 col-sm-12  ">
                 <a routerLink="/product/{{myCartProduct.id}}" style="text-decoration: none;">
 
                     <img src="{{myCartProduct.url}}" class="card-img myimg m-0 p-0 productDetailsimg ">
@@ -10,7 +10,7 @@
                 </a>
             </div>
 
-            <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-6  myProductinfo">
+            <div class=" m-0 p-0 col-lg-6 col-md-8 col-sm-12 myProductinfo">
                 <div class="mt-2 ">
                     <a routerLink="/" class='btn btn-outline-primary backTohome'> <i
                             class="fa-solid fa-circle-left"></i>
@@ -47,4 +47,5 @@
 
 
     </div>
-</div>
+</div> 
+

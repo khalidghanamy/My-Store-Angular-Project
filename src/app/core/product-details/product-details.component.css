@@ -1,6 +1,13 @@
 
 
-
+.myCartCard{
+    border: 2px violet solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    
+}
 
 .product-details{
     height: 75vh;
@@ -9,10 +16,12 @@
 
 .backTohome{
     background-color: rgba(38, 38, 215, 0.413);
+
 }
 
 .addToCard{
     background-color: rgba(242, 255, 3, 0.063);
+    margin: 1px;
 
 }
 
