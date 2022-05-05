@@ -1,9 +1,9 @@
 import { Component, EventEmitter, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Product } from 'src/app/model/product';
-import { HttpService } from 'src/app/shared/http.service';
+import { HttpService } from 'src/app/services/http.service';
 import { ActivatedRoute,ParamMap } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { CartService } from 'src/app/shared/cart.service';
+import { CartService } from 'src/app/services/cart.service';
 import { temporaryAllocator } from '@angular/compiler/src/render3/view/util';
 import Swal from 'sweetalert2';
 @Component({

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit,OnChanges,SimpleChanges } from '@angular/core';
-import { CartService } from 'src/app/shared/cart.service';
+import { CartService } from 'src/app/services/cart.service';
 import Swal from 'sweetalert2';
 
 @Component({

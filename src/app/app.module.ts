@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { CartService } from './shared/cart.service';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [

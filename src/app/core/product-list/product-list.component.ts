@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
-import { HttpService } from 'src/app/shared/http.service';
+import { HttpService } from 'src/app/services/http.service';
 import Swal from 'sweetalert2'
 @Component({
   selector: 'app-product-list',

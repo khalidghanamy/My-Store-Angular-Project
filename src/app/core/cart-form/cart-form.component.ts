@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
 import { User } from 'src/app/model/user';
-import { CartService } from 'src/app/shared/cart.service';
-import { UserService } from 'src/app/shared/user.service';
+import { CartService } from 'src/app/services/cart.service';
+import { UserService } from 'src/app/services/user.service';
 import Swal from 'sweetalert2';
 
 @Component({

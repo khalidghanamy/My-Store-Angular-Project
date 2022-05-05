@@ -7,7 +7,7 @@ import { SuccessComponent } from './success/success.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { CartService } from '../shared/cart.service';
+import { CartService } from '../services/cart.service';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { CartCardComponent } from './cart/cart-card/cart-card.component';
